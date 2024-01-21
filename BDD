@@ -1,0 +1,76 @@
+Funcionalidade:  Consultar CPF Cliente
+     Cenário: Consultar o cliente pelo CPF
+          Dado  que estou na lanchonete
+          Quando vou apresentar meu CPF
+          Então ocorre a validação de cliente cadastrado no sistema
+          E a mensagem informativa deve ser apresentada
+
+
+Funcionalidade:  Cadastrar Cliente
+     Cenário: Cadastro de novo cliente no sistema
+          Dado  que estou com documentos obrigatórios de identificação
+          Quando vou realizar o cadastro de cliente na lanchonete
+          Então ocorre o cadastro do cliente com sucesso 
+          E a mensagem de sucesso deve ser apresentada
+
+Funcionalidade:  Listar Produtos
+     Cenário: Listagem de produtos oferecidos pela lanchonete
+          Dado  que estou a lanchonete disponibiliza o menu para consumo
+          Quando solicito o menu 
+          Então  uma lista de produtos é disponibilizado com sucesso.
+
+ Funcionalidade:  Criar Pedido
+     Cenário: Cadastro de novo Pedido
+          Dado  que estou com os itens escolhidos
+          Quando escolho o Pedido
+          Então ocorre o cadastro do Pedido com sucesso 
+          E a mensagem de sucesso deve ser apresentada com o cód. do Pedido
+
+
+Funcionalidade:  Alterar Pedido
+     Cenário: Alterar os itens do Pedido
+          Dado  que estou com os novos itens escolhidos
+          Quando desejo trocar a lista do Pedido
+          Então ocorre a alteração dos itens Pedido com sucesso 
+          E a mensagem de sucesso deve ser apresentada com o mesmo cód. do Pedido
+
+
+Funcionalidade:  Criar Pagamento com QR
+     Cenário:  O cliente realiza o pagamento do Pedido com QR
+          Dado  que estou com o Pedido confirmado
+          Quando realizo o pagamento do Pedido
+          Então ocorre o pagamento do Pedido com sucesso 
+          E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento.
+
+
+Funcionalidade:  Atualizar status Pagamento
+     Cenário:  O sistema atualiza o status do Pagamento
+          Dado  que o cliente realizou o pagamento do Pedido
+          Quando o pagamento do Pedido é realizado
+          Então ocorre a atualização do status do  pagamento
+          E a mensagem de status do Pagamento deve ser apresentada.
+
+
+
+Funcionalidade:  Alterar Status do Pedido 
+     Cenário:  O sistema atualiza o status do Pedido
+          Dado que o cliente realizou o Pagamento
+          Quando o cliente realizou o Pagamento
+          Então ocorre a atualização do status do Pedido de acordo com status do Pagamento 
+          E a mensagem de status do Pedido alterado deve ser apresentada com sucesso
+
+
+Funcionalidade:  Listar Pedidos Pendente
+    Cenário:  O sistema disponibiliza a lista de Pedidos Pendentes
+          Dado que existem Pedidos Pendentes
+          Quando a lanchonete inicia as operações
+          Então ocorre a Listagem de Pedidos Pendentes 
+          E a Listagem de Pedidos Pendentes apresentada com sucesso
+
+
+Funcionalidade:  Listar Pedidos Prontos
+    Cenário:  O sistema disponibiliza a lista de Pedidos Prontos
+          Dado que existem Pedidos Prontos
+          Quando a lanchonete inicia as operações
+          Então ocorre a Listagem de Pedidos Prontos
+          E a Listagem de Pedidos Prontos apresentada com sucesso
