@@ -1,10 +1,9 @@
 Funcionalidade:  Consultar CPF Cliente
      Cenário: Consultar o cliente pelo CPF
-          Dado  que estou na lanchonete
-          Quando vou apresentar meu CPF
+          Dado  que o cliente entra no sistema da lanchonete
+          Quando o cliente vai apresentar o CPF
           Então ocorre a validação de cliente cadastrado no sistema
           E a mensagem informativa deve ser apresentada
-
 
 Funcionalidade:  Cadastrar Cliente
      Cenário: Cadastro de novo cliente no sistema
@@ -15,9 +14,9 @@ Funcionalidade:  Cadastrar Cliente
 
 Funcionalidade:  Listar Produtos
      Cenário: Listagem de produtos oferecidos pela lanchonete
-          Dado  que estou a lanchonete disponibiliza o menu para consumo
-          Quando solicito o menu 
-          Então  uma lista de produtos é disponibilizado com sucesso.
+          Dado  que o cliente acessa o menu de produtos da lanchonete
+          Quando o cliente solicita o Menu 
+          Então uma lista de produtos é disponibilizado para o cliente.
 
  Funcionalidade:  Criar Pedido
      Cenário: O Cliente realiza um Pedido
@@ -29,10 +28,10 @@ Funcionalidade:  Listar Produtos
 
 Funcionalidade:  Alterar Pedido
      Cenário: Alterar os itens do Pedido
-          Dado  que estou com os novos itens escolhidos
-          Quando desejo trocar a lista do Pedido
+          Dado que o cliente deseja incluir ou alterar itens do Pedido
+          Quando o cliente deseja trocar a lista de produtos do Pedido
           Então ocorre a alteração dos itens Pedido com sucesso 
-          E a mensagem de sucesso deve ser apresentada com o mesmo cód. do Pedido
+          E a mensagem de Pedido atualizado com sucesso deve ser apresentada
 
 
 Funcionalidade:  Criar Pagamento com QR
