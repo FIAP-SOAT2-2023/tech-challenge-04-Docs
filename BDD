@@ -37,9 +37,9 @@ Funcionalidade:  Alterar Pedido
 
 Funcionalidade:  Criar Pagamento com QR
      Cenário:  O cliente realiza o pagamento do Pedido com QR
-          Dado  que estou com o Pedido confirmado
-          Quando realizo o pagamento do Pedido
-          Então ocorre a atualização do status do Pagamento 
+          Dado  que o cliente está com o Pedido confirmado
+          Quando o cliente seleciona o pagamento online
+          Então o sistema processa o pagamento e ocorre a atualização do status do Pagamento 
           E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento.
 
 
