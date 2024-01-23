@@ -25,14 +25,12 @@ Funcionalidade:  Listar Produtos
           Então ocorre o cadastro do Pedido com sucesso 
           E a mensagem de sucesso deve ser apresentada com o cód. do Pedido
 
-
 Funcionalidade:  Alterar Pedido
      Cenário: Alterar os itens do Pedido
           Dado que o cliente deseja incluir ou alterar itens do Pedido
           Quando o cliente deseja trocar a lista de produtos do Pedido
           Então ocorre a alteração dos itens Pedido com sucesso 
           E a mensagem de Pedido atualizado com sucesso deve ser apresentada
-
 
 Funcionalidade:  Criar Pagamento com QR
      Cenário:  O cliente realiza o pagamento do Pedido com QR
@@ -41,15 +39,12 @@ Funcionalidade:  Criar Pagamento com QR
           Então o sistema processa o pagamento e ocorre a atualização do status do Pagamento 
           E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento.
 
-
 Funcionalidade:  Atualizar status Pagamento
      Cenário:  O sistema atualiza o status do Pagamento
           Dado  que o cliente realizou o pagamento do Pedido
           Quando o pagamento do Pedido é realizado
           Então ocorre a atualização do status do  pagamento
           E a mensagem de status do Pagamento deve ser apresentada.
-
-
 
 Funcionalidade:  Alterar Status do Pedido 
      Cenário:  O sistema atualiza o status do Pedido
@@ -58,7 +53,6 @@ Funcionalidade:  Alterar Status do Pedido
           Então ocorre a atualização do status do Pedido de acordo com status do Pagamento 
           E a mensagem de status do Pedido alterado deve ser apresentada com sucesso
 
-
 Funcionalidade:  Listar Pedidos Pendente
     Cenário:  O sistema disponibiliza a lista de Pedidos Pendentes
           Dado que existem Pedidos Pendentes
@@ -66,10 +60,15 @@ Funcionalidade:  Listar Pedidos Pendente
           Então ocorre a Listagem de Pedidos Pendentes 
           E a Listagem de Pedidos Pendentes apresentada com sucesso
 
-
 Funcionalidade:  Listar Pedidos Prontos
     Cenário:  O sistema disponibiliza a lista de Pedidos Prontos
           Dado que existem Pedidos Prontos
           Quando a lanchonete inicia as operações
           Então ocorre a Listagem de Pedidos Prontos
           E a Listagem de Pedidos Prontos apresentada com sucesso
+
+Funcionalidade: Cadastro de Produto(s)
+     Cenário: O administrador dos sistema cadastra novos produtos
+          Dado que o administrador esteja autenticado no sistema
+          Quando o administrador deseja cadastrar novo(s) produto(s) com os dados obritatórios: {nome, descrição, preço}
+          Então o produto é adicionado ao menu
