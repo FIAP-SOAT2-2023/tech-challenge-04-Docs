@@ -39,7 +39,7 @@ Funcionalidade:  Criar Pagamento com QR
      Cenário:  O cliente realiza o pagamento do Pedido com QR
           Dado  que estou com o Pedido confirmado
           Quando realizo o pagamento do Pedido
-          Então ocorre o pagamento do Pedido com sucesso 
+          Então ocorre a atualização do status do Pagamento 
           E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento.
 
 
