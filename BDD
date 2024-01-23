@@ -8,8 +8,8 @@ Funcionalidade:  Consultar CPF Cliente
 
 Funcionalidade:  Cadastrar Cliente
      Cenário: Cadastro de novo cliente no sistema
-          Dado  que estou com documentos obrigatórios de identificação
-          Quando vou realizar o cadastro de cliente na lanchonete
+          Dado  que o adminstrador do sistema com os dados obrigatórios de identificação {nome, cpf, cel e email}
+          Quando o administrador realizar o cadastro de cliente no sistema
           Então ocorre o cadastro do cliente com sucesso 
           E a mensagem de sucesso deve ser apresentada
 
@@ -20,9 +20,9 @@ Funcionalidade:  Listar Produtos
           Então  uma lista de produtos é disponibilizado com sucesso.
 
  Funcionalidade:  Criar Pedido
-     Cenário: Cadastro de novo Pedido
-          Dado  que estou com os itens escolhidos
-          Quando escolho o Pedido
+     Cenário: O Cliente realiza um Pedido
+          Dado  que o cliente está com os itens de Menu
+          Quando o Cliente escolhe os produtos e confirma o Pedido
           Então ocorre o cadastro do Pedido com sucesso 
           E a mensagem de sucesso deve ser apresentada com o cód. do Pedido
 
