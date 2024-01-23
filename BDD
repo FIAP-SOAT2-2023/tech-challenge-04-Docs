@@ -1,74 +1,80 @@
-Funcionalidade:  Consultar CPF Cliente
+1. Funcionalidade:  Consultar CPF Cliente
      Cenário: Consultar o cliente pelo CPF
           Dado  que o cliente entra no sistema da lanchonete
           Quando o cliente vai apresentar o CPF
           Então ocorre a validação de cliente cadastrado no sistema
           E a mensagem informativa deve ser apresentada
 
-Funcionalidade:  Cadastrar Cliente
+2. Funcionalidade:  Cadastrar Cliente
      Cenário: Cadastro de novo cliente no sistema
           Dado  que o adminstrador do sistema com os dados obrigatórios de identificação {nome, cpf, cel e email}
           Quando o administrador realizar o cadastro de cliente no sistema
           Então ocorre o cadastro do cliente com sucesso 
           E a mensagem de sucesso deve ser apresentada
 
-Funcionalidade:  Listar Produtos
+3. Funcionalidade:  Listar Produtos
      Cenário: Listagem de produtos oferecidos pela lanchonete
           Dado  que o cliente acessa o menu de produtos da lanchonete
           Quando o cliente solicita o Menu 
-          Então uma lista de produtos é disponibilizado para o cliente.
+          Então uma lista de produtos é disponibilizado para o cliente
 
- Funcionalidade:  Criar Pedido
+ 4. Funcionalidade:  Criar Pedido
      Cenário: O Cliente realiza um Pedido
           Dado  que o cliente está com os itens de Menu
           Quando o Cliente escolhe os produtos e confirma o Pedido
           Então ocorre o cadastro do Pedido com sucesso 
           E a mensagem de sucesso deve ser apresentada com o cód. do Pedido
 
-Funcionalidade:  Alterar Pedido
+5. Funcionalidade:  Alterar Pedido
      Cenário: Alterar os itens do Pedido
           Dado que o cliente deseja incluir ou alterar itens do Pedido
           Quando o cliente deseja trocar a lista de produtos do Pedido
           Então ocorre a alteração dos itens Pedido com sucesso 
           E a mensagem de Pedido atualizado com sucesso deve ser apresentada
 
-Funcionalidade:  Criar Pagamento com QR
+6. Funcionalidade:  Criar Pagamento com QR
      Cenário:  O cliente realiza o pagamento do Pedido com QR
           Dado  que o cliente está com o Pedido confirmado
           Quando o cliente seleciona o pagamento online
           Então o sistema processa o pagamento e ocorre a atualização do status do Pagamento 
-          E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento.
+          E a mensagem de sucesso deve ser apresentada com o comprovante de Pagamento
 
-Funcionalidade:  Atualizar status Pagamento
+7. Funcionalidade:  Atualizar status Pagamento
      Cenário:  O sistema atualiza o status do Pagamento
           Dado  que o cliente realizou o pagamento do Pedido
           Quando o pagamento do Pedido é realizado
           Então ocorre a atualização do status do  pagamento
-          E a mensagem de status do Pagamento deve ser apresentada.
+          E a mensagem de status do Pagamento deve ser apresentada
 
-Funcionalidade:  Alterar Status do Pedido 
+8. Funcionalidade:  Alterar Status do Pedido 
      Cenário:  O sistema atualiza o status do Pedido
           Dado que o cliente realizou o Pagamento
           Quando o cliente realizou o Pagamento
           Então ocorre a atualização do status do Pedido de acordo com status do Pagamento 
           E a mensagem de status do Pedido alterado deve ser apresentada com sucesso
 
-Funcionalidade:  Listar Pedidos Pendente
+9. Funcionalidade:  Listar Pedidos Pendente
     Cenário:  O sistema disponibiliza a lista de Pedidos Pendentes
           Dado que existem Pedidos Pendentes
           Quando a lanchonete inicia as operações
           Então ocorre a Listagem de Pedidos Pendentes 
           E a Listagem de Pedidos Pendentes apresentada com sucesso
 
-Funcionalidade:  Listar Pedidos Prontos
+10. Funcionalidade:  Listar Pedidos Prontos
     Cenário:  O sistema disponibiliza a lista de Pedidos Prontos
           Dado que existem Pedidos Prontos
           Quando a lanchonete inicia as operações
           Então ocorre a Listagem de Pedidos Prontos
           E a Listagem de Pedidos Prontos apresentada com sucesso
 
-Funcionalidade: Cadastro de Produto(s)
+11. Funcionalidade: Cadastro de Produto(s)
      Cenário: O administrador dos sistema cadastra novos produtos
           Dado que o administrador esteja autenticado no sistema
           Quando o administrador deseja cadastrar novo(s) produto(s) com os dados obritatórios: {nome, descrição, preço}
           Então o produto é adicionado ao menu
+
+12. Funcionalidade: Atualizar Estoque
+     Cenário: O estoque é atualizado a cada pedido
+          Dado que um pedido foi confirmado pelo sistema
+          Quando o status do pedido tem seu status confirmado pelo sistema
+          Então a quantidade do estoque é atualizado com baixa no produto(s) escolhido(s)
